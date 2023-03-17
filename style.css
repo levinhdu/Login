@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('wallpaperflare.com_wallpaper.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    height: 400px;
+    width: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+
+    transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+
+    font-size: 1em;
+    color: #fff;
+    background: transparent;
+}
+
+.input-box ion-icon {
+    position: absolute;
+    right: 8px;
+    top: 20px;
+
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget label a{
+    color: #000;
+    text-decoration: none;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+
+    border-radius: 40px;
+    border: none;
+    
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15px;
+
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.register p a{
+    text-decoration: none;
+    color: #000;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
